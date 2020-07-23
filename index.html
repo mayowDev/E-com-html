@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML E-store</title>
+    <!--  Font Awesome CDN -->
+    
+    <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+    <script src="https://use.fontawesome.com/da40ccf780.js"></script>
+    <!-- slick carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <div class="top-nav">
+        <div class="top-nav--dropdown">
+          <select class="border">
+              <option value="USD" selected>USD</option>
+              <option value="ERU" >EURO</option>
+          </select>
+        </div>
+        <div class="top-nav--title">
+          <h3>Online Store</h3>
+        </div>
+        <p class="top-nav--links">
+          <a href="#"><i class="fa fa-user" aria-expanded="false" aria-hidden="true">Login</i></a>
+          <a href="#"><i class="fa fa-shopping-bag"  aria-hidden="true">Cart</i></a>
+        </p>
+      </div>
+        <!-- second nav -->
+      <div class="second-nav">
+        <nav>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Shop</li></a>
+          <a href="#"><li>About Us</li></a>
+          <a href="#"><li>Collection</li></a>
+        </nav>
+        <div class="icons">
+          <li >
+            <i class="fa fa-search"></i>
+          </li>
+          <li>
+            <i class="fa fa-truck"></i>
+          </li>
+        </div>
+      </div>
+    </header>
+      <!-- /header -->
+      <!-- main -->
+    <main>
+      <!-- first/hero slider -->
+      <div class="slider-one">
+        <div class="hero-slider">
+          <div class="items item-one">
+            <!-- <img class="img " src="./assets/item-1.jpg" alt="hero-slider-1"> -->
+            <div class="description">
+              <span>Welcome to our</span>
+              <h2>Destino Furniture Collection</h2>
+              <button>Shop now</button>
+            </div>
+          </div>
+          <div class="items item-two">
+            <div class="description">
+              <h2>SALE</h2>
+              <span>Upto to 70% OFF</span>
+              <h3>All-in-One Furniture Stop</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Minus numquam voluptate quae sapiente, deserunt laudantium 
+                ad tempora.
+              </p>
+              <button>Shop Now</button>
+            </div>
+            <div class="img-box">
+              <img class="img" src="./assets/item-2.png" alt="hero-slider-2">
+            </div>
+            
+          </div>
+          <div class="items item-three">
+            <div class="img-box">
+              <img class="img" src="./assets/item-3.png" alt="hero-slider-3">
+            </div>
+            <div class="description">
+              <h2>2020</h2>
+              <span>Sofa Collection</span>
+              <h3>Minimalist Desing Furniture</h3>
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider-btn">
+          <span class="prev position-top">
+            <i class="fa fa-chevron-left"></i>
+          </span>
+          <span class="next position-top right-0">
+            <i class="fa fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+      <!--/ first slider -->
+      <!-- second slider -->
+      <div class="slider-two">
+        <div class="product-slider">
+          <div class="product">
+            <img src="./assets/id-9-cat-1.jpg" alt="product-1">
+            <span class="border btn-span">sofa & chairs</span>
+          </div>
+          <div class="product">
+            <img src="./assets/id-9-cat-2.jpg" alt="product-2">
+            <span class="border btn-span">furnitures & decor</span>
+          </div>
+          <div class="product">
+            <img src="./assets/id-9-cat-3.jpg" alt="product-3">
+            <span class="border btn-span">lamp & lighting</span>
+          </div>
+          <div class="product">
+            <img src="./assets/id-9-cat-4.jpg" alt="product-4">
+            <span class="border btn-span">appliciens</span>
+          </div>
+          <div class="product">
+            <img src="./assets/id-9-cat-5.jpg" alt="product-5">
+            <span class="border btn-span">Bed & sheets</span>
+          </div>
+        </div>
+        <div class="slider-btn">
+          <span class="prev position-top">
+            <i class="fa fa-2x fa-chevron-left"></i>
+          </span>
+          <span class="next position-top right-0">
+            <i class="fa fa-2x fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+      <hr class="hr">
+      <!-- third slider -->
+      <div class="container text-center">
+        <div class="features">
+          <h1>Featured Products</h1>
+          <p class="text-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="slider-three">
+        <div class="features-slider">
+          <div class="product">
+            <img src="./assets/15_3.jpg" class="img-fluid" alt="Image 1" />
+            <div class="cart-details">
+              <h6>Vinyl Top Folding Table</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="pro-price">
+                <h5>
+                  <small><s class="text-secondary">$125.99</s></small>
+                  <span>$120</span>
+                </h5>
+              </div>
+              <div class="cart">
+                <button class="border btn-span">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/9_21.jpg" class="img-fluid" alt="Image 2" />
+            <div class="cart-details">
+              <h6>Ikea RUSCH 25x4 Wall</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="pro-price">
+                <h5>
+                  <small><s class="text-secondary">$119.99</s></small>
+                  <span>$103</span>
+                </h5>
+              </div>
+              <div class="cart">
+                <button class="border btn-span">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/10_22.jpg" class="img-fluid" alt="Image 3" />
+            <div class="cart-details">
+              <h6>Himalayan Salt Lamp Touch</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div class="pro-price">
+                <h5>
+                  <small><s class="text-secondary">$469.99</s></small>
+                  <span>$449.99</span>
+                </h5>
+              </div>
+              <div class="cart">
+                <button class="border btn-span">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/12_16.jpg" class="img-fluid" alt="Image 4" />
+            <div class="cart-details">
+              <h6>Table Lamp Beside Desk</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="pro-price">
+                <h5>
+                  <span>$449.99</span>
+                </h5>
+              </div>
+              <div class="cart">
+                <button class="border btn-span">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/11_18.jpg" class="img-fluid" alt="Image 4" />
+            <div class="cart-details">
+              <h6>Parsons Modern End</h6>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <div class="pro-price">
+                <h5>
+                  <small><s class="text-secondary">$259.99</s></small>
+                  <span>$240.00</span>
+                </h5>
+              </div>
+              <div class="cart">
+                <button class="border btn-span">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <img src="./assets/7_22.jpg" class="img-fluid" alt="Image 5" />
+            <div class="cart-details">
+              <h6>Outdoor Patio Teak Side Table</h6>
+              <div class="rating">
+                <span>write your review</span>
+              </div>
+              <div class="pro-price">
+                <h5>
+                  <small><s class="text-secondary">$139.99</s></small>
+                  <span>$125.00</span>
+                </h5>
+              </div>
+              <div class="cart">
+                <button class="border btn-span">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="slider-btn">
+          <span class="prev position-top">
+            <i class="fa fa-2x fa-chevron-left"></i>
+          </span>
+          <span class="next position-top right-0">
+            <i class="fa fa-2x fa-chevron-right"></i>
+          </span>
+        </div>
+      </div>
+      <!-- /Features third Slider -->
+
+       <!-- Sofa Section -->
+      <div class="sofa">  
+        <div class="col-left">
+          <div class="count">
+            <div class="count--item text-center">
+              <h5 class="primary-color"><strong>125</strong></h5>
+              <em>days</em>
+            </div>
+            <div class="count--item text-center">
+              <h5 class="primary-color"><strong>5</strong></h5>
+              <em>Hours</em>
+            </div>
+            <div class="count--item  text-center">
+              <h5 class="primary-color"><strong>45</strong></h5>
+              <em>Mins</em>
+            </div>
+            <div class="count--item text-center">
+              <h5 class="primary-color"><strong>13</strong></h5>
+              <em>Secs</em>
+            </div>
+          </div>
+          <div class="img-box">
+            <img src="./assets/1_11.jpg" alt="Sofa" class="img-fluid">
+          </div>
+          
+        </div>
+        <div class="col-right">
+          <h4 class="title">Upholstered Fabric Sofa</h4>
+          <p class="text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis alias laudantium, enim facilis obcaecati debitis illo,
+            ipsum totam consequuntur voluptas corporis ratione omnis voluptatem at repudiandae rerum praesentium assumenda ab.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h4 class="price">
+            <small><s class="text-secondary">$519.99</s></small>
+            <span class="text-color">$499.00</span>
+          </h4>
+          <div class="cta">
+            <button class="btn-span">Add to Cart</button>
+            <div class="icons">
+              <span ><i class="fa fa-heart"></i></span>
+              <span ><i class="fa fa-refresh"></i></span>
+              <span ><i class="fa fa-search"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Sofa Section -->
+      <!-- sofa fourth-slider -->
+      <div class="slider-four">
+        <div class="sofa-slider text-center">
+          <div class="product">
+            <img src="./assets/1_11.jpg" class="border img-fluid" alt="Product 1">
+          </div>
+          <div class="product">
+            <img src="./assets/3_20.jpg" class="border img-fluid" alt="Product 2">
+          </div>
+          <div class="product">
+            <img src="./assets/6_19.jpg" class="border img-fluid" alt="Product 3">
+          </div>
+          <div class="product">
+            <img src="./assets/8_20.jpg" class="border img-fluid" alt="Product 4">
+          </div>
+          <div class="product">
+            <img src="./assets/11_18.jpg" class="border img-fluid" alt="Product 5">
+          </div>
+          <div class="product">
+            <img src="./assets/15_3.jpg" class="border img-fluid" alt="Product 6">
+          </div>
+        </div>
+        <div class="slider-btn">
+          <span class="prev position-top">
+            <i class="fa fa-chevron-left fa-2x text-secondary"></i>
+          </span>
+          <span class="next position-top right-0">
+            <i class="fa fa-chevron-right fa-2x text-secondary"></i>
+          </span>
+        </div>
+      </div>
+      <!-- /fourth-slider -->
+      <!-- banner section -->
+      <div class="grid">
+        <div class="item--one">
+          <div class="item-img">
+            <img src="./assets/luxury-sofa.png" alt="Banner 4">
+          </div>
+          <div class="item-description">
+            <span>sale 70% off</span>
+            <h4>Luxury sofa furniture</h4>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+        <div class="item--two">
+          <img src="./assets/id-9-banner-2.jpg" class="img-fluid" alt="Banner 2">
+        </div>
+      </div>
+      <div class="grid-two">
+        <div class="item--three">
+          <img src="./assets/id-9-banner-3.jpg" class="img-fluid" alt="Banner 3">
+        </div>
+        <div class="item--four">
+          <div class="item-img">
+            <img src="./assets/luxury-sofa.png"  alt="Banner 4">
+          </div>
+          <div class="item-description">
+            <span>sale 70% off</span>
+            <h4>Luxury sofa furniture</h4>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+      </div>
+      <!-- /banner section -->
+      <!-- arrivals section -->
+      <div class="arrivals">
+        <div class="column one">
+          <h3 class="text-secondary">new arrivals</h3>
+          <div class="item-box">
+            <img src="./assets/15_3.jpg" alt="Image 1" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Vinyl Top Folding Table</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <h5>
+                <small><s class="text-secondary">$125.99</s></small>
+                <span class="text-color">$120</span>
+              </h5>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="./assets/11_18.jpg" alt="Image 2" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Parsons Mordern Black</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5>
+                <small><s class="text-secondary">$159.99</s></small>
+                <span class="text-color">$240</span>
+              </h5>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="./assets/9_21.jpg" alt="Image 3" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Ikea RUSCH 25x4 Wall</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5>
+                <span class="text-color">$103</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="column two">
+          <h3 class="text-secondary">best seller</h3>
+          <div class="item-box">
+            <img src="./assets/11_18.jpg" alt="Image 2" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Parsons Mordern End Black</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5>
+                <small><s class="text-secondary">$159.99</s></small>
+                <span class="text-color">$240</span>
+              </h5>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="./assets/12_16.jpg" alt="Image 3" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Ikea RUSCH 25x4 Wall</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5>
+                <span class="text-color">$103</span>
+              </h5>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="./assets/8_20.jpg" alt="Image 3" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Ikea RUSCH 25x4 Wall</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5>
+                <span class="text-color">$103</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="column three">
+          <h3 class="text-secondary">Featured</h3>
+          <div class="item-box">
+            <img src="./assets/8_20.jpg" alt="Image 3" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Ikea RUSCH 25x4 Wall</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5>
+                <span class="text-color">$103</span>
+              </h5>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="./assets/15_3.jpg" alt="Image 1" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Vinyl Top Folding Table</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+              </div>
+              <h5>
+                <small><s class="text-secondary">$125.99</s></small>
+                <span class="text-color">$120</span>
+              </h5>
+            </div>
+          </div>
+          <div class="item-box">
+            <img src="./assets/11_18.jpg" alt="Image 2" class="img-fluid">
+            <div class="item-details px-4">
+              <h6>Parsons Mordern Black</h6>
+              <div class="rating pb-2">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5>
+                <small><s class="text-secondary">$159.99</s></small>
+                <span class="text-color">$240</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /arrivals section -->
+      <div class="slider-five">
+        <div class="brand-slider">
+          <div class="product">
+            <img src="./assets/item-7.jpg" alt="Brand 1" class="img-fluid">
+          </div>
+          <div class="product">
+              <img src="./assets/item-8.jpg" alt="Brand 2" class="img-fluid">
+          </div>
+          <div class="product">
+              <img src="./assets/item-9.jpg" alt="Brand 3" class="img-fluid">
+          </div>
+          <div class="product">
+              <img src="./assets/item-10.jpg" alt="Brand 4" class="img-fluid">
+          </div>
+          <div class="product">
+              <img src="./assets/item-8.jpg" alt="Brand 2" class="img-fluid">
+          </div>
+          <div class="product">
+              <img src="./assets/item-7.jpg" alt="Brand 1" class="img-fluid">
+          </div>
+          <div class="product">
+              <img src="./assets/item-9.jpg" alt="Brand 3" class="img-fluid">
+          </div>
+        </div>
+        <div class="slider-btn">
+          <span class="prev position-top">
+            <i class="fa fa-chevron-left text-secondary"></i>
+          </span>
+          <span class="next position-top right-0">
+            <i class="fa fa-chevron-right text-secondary"></i>
+          </span>
+        </div>
+      </div>
+      <!-- client feedback -->
+      <div class="slider-six  text-center">
+        <div class="slider-box">
+          <h2>What our clients say?</h2>
+          <div class="clients-slider">
+            <div class="slider-item">
+              <p>
+                Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Error possimus, perspiciatis sed commodi,
+                suscipit libero repudiandae excepturi dolorem 
+                voluptate nihil esse reprehenderit fuga laudantium
+                illum, laboriosam tenetur. Saepe, perferendis voluptates?
+                suscipit libero repudiandae excepturi dolorem 
+                voluptate nihil esse reprehenderit fuga laudantium
+                illum, laboriosam tenetur.
+              </p>
+              <h5>John Doe</h5>
+              <small>CEO of acmy webdesign</small>
+            </div>
+            <div class="slider-item">
+              <p>
+                Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Error possimus, perspiciatis sed commodi,
+                suscipit libero repudiandae excepturi dolorem voluptate nihil esse reprehenderit fuga laudantium illum, laboriosam tenetur. Saepe, perferendis voluptates?
+                suscipit libero repudiandae excepturi dolorem 
+                voluptate nihil esse reprehenderit fuga laudantium
+                illum, laboriosam tenetur.
+              </p>
+              <h5>Mrs Jenna</h5>
+              <small>Owner of evryday beautyshop</small>
+            </div>
+            <div class="slider-item">
+              <p>
+                Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Error possimus, perspiciatis sed commodi,
+                suscipit libero repudiandae excepturi dolorem voluptate nihil esse reprehenderit fuga laudantium illum, laboriosam tenetur. Saepe, perferendis voluptates?
+                suscipit libero repudiandae excepturi dolorem 
+                voluptate nihil esse reprehenderit fuga laudantium
+                illum, laboriosam tenetur.
+              </p>
+              <h5>Mike ross</h5>
+              <small>unlicensed lawyer at suits</small>
+            </div>
+            <div class="slider-item">
+              <p>
+                Lorem ipsum dolor sit, 
+                amet consectetur adipisicing elit. 
+                Error possimus, perspiciatis sed commodi,
+                suscipit libero repudiandae excepturi dolorem voluptate nihil esse reprehenderit fuga laudantium illum, laboriosam tenetur. Saepe, perferendis voluptates?
+                suscipit libero repudiandae excepturi dolorem 
+                voluptate nihil esse reprehenderit fuga laudantium
+                illum, laboriosam tenetur. Saepe,
+              </p>
+              <h5>John Doe</h5>
+              <small>CEO of acmy webdesign</small>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- /client feedback -->
+      <!-- /client feedback -->
+
+      <!-- services section -->
+      <div class="services-section">
+        <div class="item">
+          <i class="fa fa-rocket fa-4x "></i>
+          <div>
+            <h6>Free Shipping & Return</h6>
+            <small>Free Shipping on order over $49</small>
+          </div>
+        </div>
+        <div class="item">
+          <i class="fas fa-hand-holding-usd fa-4x"></i>
+          <div>
+            <h6>Money Guarantee</h6>
+            <small>30 days money back guarantee</small>
+          </div>
+          
+        </div>
+        <div class="item">
+          <i class="fa fa-headphones fa-4x"></i>
+          <div>
+            <h6 >Online Support</h6>
+            <small>We support online 24 hours a day</small>
+          </div>
+          
+        </div>
+      </div>
+      <!-- /services section -->
+      <footer class="footer">
+        <div class="footer-one">
+          <div class="columns">
+            <div class="columns__contact">
+              <h4>Contact us</h4>
+              <div class="info">
+                <i class="fa fa-home px-md-2"></i>
+                <small>40 Baria Sreet, NewYork.</small>
+              </div>
+              <div class="info">
+                <i class="fa fa-paper-plane px-md-2"></i>
+                <small>www.mayowdev.com</small>
+              </div>
+              <div class="info">
+                <i class="fa fa-phone-volume px-md-2"></i>
+                <small>(888) 123456789</small>
+              </div>
+              <div class="social-media">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-skype"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </div>
+            <div class="columns__services">
+              <h4>Services</h4>
+              <div class="columns__services--items">
+                <small class="pt-0">New York</small>
+                <small>London</small>
+                <small>Tokyo</small>
+                <small>Los Angeles</small>
+                <small>Toronto</small>
+              </div>
+            </div>
+            <div class="columns__extras">
+              <h4>Extras</h4>
+              <div class="columns__extras--items">
+                <small class="pt-0">About Store</small>
+                <small>New Collection</small>
+                <small>Contact Us</small>
+                <small>Latest News</small>
+                <small>Our Sitemap</small>
+              </div>
+            </div>
+          </div>
+          <div class="instagram-grid">
+            <h4>Follow Us On Instagram</h4>
+            <div class="instagram-grid__items flex-row">
+              <img src="./assets/256_n.jpg" alt="Instagram 1" class="img-fluid">
+              <img src="./assets/792_n.jpg" alt="Instagram 2" class="img-fluid">
+              <img src="./assets/392_n.jpg" alt="Instagram 3" class="img-fluid">
+            </div>
+            <div class="instagram-grid__items flex-row">
+              <img src="./assets/664_n.jpg" alt="Instagram 1" class="img-fluid">
+              <img src="./assets/088_n.jpg" alt="Instagram 2" class="img-fluid">
+              <img src="./assets/896_n.jpg" alt="Instagram 3" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-letter">
+          <div class="contact">
+            <h4 class="primary-color">
+              Need Help? Call Our Award-Warning
+            </h4>
+            <p class="text-secondary">
+              Support Team 24/7 At (844) 5555-8324
+            </p>
+          </div>
+          <div class="subscribe">
+            <div>
+              <input type="email" placeholder="Enter Your email Address"   required>
+            </div>
+            <button>Subscribe</button>
+          </div>
+        </div>
+        <div class="container text-center">
+          <p class="pt-5">
+            <img src="./assets/payment.png" alt="payment image" class="img-fluid">
+          </p>
+          <small class="text-secondary py-4">Mayowdev © 2020 SOFA Store. All Rights Reserved.</small>
+        </div>
+      </footer>
+      
+    </main>
+   
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script 
+    type="text/javascript" 
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
+    <script 
+    type="text/javascript" 
+    src="./js/main.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.container{
+    .features{
+        padding:8rem 0;
+        h1 {
+            font-family: $font-gugi;
+        }
+        p {
+            padding: 0.5% 25%;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.slider-three{
+    padding: 0 4rem;
+    
+    position: relative;
+    margin-bottom: 5rem;
+    .features-slider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // text-align: center;
+        .product{
+            padding-top: 5rem;
+            height: 100%;
+            padding: 0em;
+            img{
+                height: 25vh;
+            }
+            .cart-details{
+                text-align: center;
+                margin-top: 0.8rem;
+                padding: 0 3rem;
+                h6{
+                    font-size: 1.5rem;
+                    padding: 0;
+                }
+                .pro-price{
+                    padding: .5rem 0;
+                    h5{
+                        font-size: 1.5rem;
+                    }
+                }
+                @include btn-span;
+                .cart{
+                    margin-top: .5rem;
+                }
+            }
+             
+        }
+    }
+    .pro-price span {
+        color: $color-text;
+    }
+    @include slider-btn(no);
+    
+    
+}
+

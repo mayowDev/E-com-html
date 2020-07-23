@@ -1,0 +1,137 @@
+.grid{
+    display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    // grid-template-rows: repeat(6, 1fr) 5rem;
+    gap: 3rem;
+
+    padding: 0 6rem;
+    margin: 0;
+    @include responsive(phone){
+        padding: 3rem;
+    }
+    .item--one{
+        grid-column: 1 / span 2;
+        grid-row: 1 / -1;
+        background-color: #F3F3F3;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item-img{ 
+            img{
+                width: 100%;
+            }
+        }
+        @include responsive(phone){
+            grid-column: 1 / -1;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .item-description{
+            padding: 2rem;
+            order: 0;
+            span{
+                text-transform: capitalize;
+                font-size: 2.5rem;
+                letter-spacing: .1px;
+                color:$color-light-grey;
+                font-weight: 300;
+            }
+            h4{
+                font-size: 3rem;
+                line-height: 1.5;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: $color-primary;
+            }
+            a{
+                display: inline-block;
+                color:$color-light-grey;
+                font-size: 1.6rem;
+                text-decoration: underline;
+                text-transform: capitalize;
+                cursor: pointer;
+                transition: all .2s;
+                padding-top: 1rem;
+                &:hover{
+                    transform: translateY(-2px);
+                }
+                &:active{
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    
+}
+
+.grid-two{
+    display: grid;
+    // grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    // grid-template-rows: repeat(6, 1fr) 5rem;
+    gap: 3rem;
+
+    padding: 0 6rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    @include responsive(phone){
+        padding: 3rem;
+    }
+   
+    .item--four{
+        grid-column: 4 / -1;
+        grid-row: 1 / -1;
+        background-color: #F3F3F3;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include responsive(phone){
+            grid-column: 1 / -1;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .item-img{ 
+            img{
+                width: 100%;
+            }
+        }
+        .item-description{
+            padding: 2rem;
+            span{
+                text-transform: capitalize;
+                font-size: 2.5rem;
+                letter-spacing: .1px;
+                color:$color-light-grey;
+                font-weight: 300;
+            }
+            h4{
+                font-size: 3rem;
+                line-height: 1.5;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: $color-primary;
+            }
+            a{
+                display: inline-block;
+                color:$color-light-grey;
+                font-size: 1.6rem;
+                text-decoration: underline;
+                text-transform: capitalize;
+                cursor: pointer;
+                transition: all .2s;
+                padding-top: 1rem;
+                &:hover{
+                    transform: translateY(-2px);
+                }
+                &:active{
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,50 @@
+.services-section{
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    padding: 5rem 0;
+    @include responsive(phone){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-light;
+        text-align: left;
+        padding-bottom: 2rem;
+        font-family: $font-roboto;
+        -webkit-font-smoothing: antialiased;
+        i{
+            font-size: 6rem;
+            padding: 2rem 4rem;
+            @include responsive(phone){
+                font-size: 10rem;
+                padding-left: 0;
+            }                
+        }
+        div>h6{
+            -webkit-font-smoothing: antialiased;
+            font-size: 1.6rem;
+            margin: 0;
+            @include responsive(phone){
+                font-size: 2.5rem;
+                font-weight: 400;
+            } 
+        }
+        div>small{
+            font-size:1.3rem;
+            margin: 0;
+            @include responsive(phone){
+                font-size: 1.7rem;
+                font-weight: 300;
+                color: $color-light;
+                letter-spacing: .5px;
+            } 
+        }
+    }
+}

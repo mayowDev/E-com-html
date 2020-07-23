@@ -1,0 +1,75 @@
+.arrivals{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 8rem 0;
+    padding: 0 8rem;
+    font-size: 2rem;
+    @include responsive(phone){
+        flex-wrap: wrap;
+        padding:0 2rem;
+        justify-content: flex-start;
+    }
+    .column{
+        text-transform: capitalize;
+        @include responsive(phone){
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        }
+        
+        h3{
+            font-size: 2.5rem;
+            text-align: center;
+            margin-left: -35%;
+            margin-bottom: 2rem;
+            @include responsive(phone){
+                margin-top: 2rem;
+                margin-left: 0;
+                font-size: 3.5rem;
+                
+            }
+        }
+        .item-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            img{
+                width: 35%;
+            }
+            @include responsive(phone){
+                flex-direction: row;
+                border: 1px solid $color-grey;
+                img{
+                    width: 100%;
+                    
+                }
+                
+            }
+            .item-details{
+                @include responsive(phone){
+                    text-align: center;
+                    h6{
+                        font-size: 2.5rem;
+                        font-weight: 300;
+                    }
+                    .rating{
+                        i{
+                            font-size: 2rem;
+                            font-weight: 700;
+                        }
+                    }
+                    h5{
+                        display: block;
+                        font-size: 2.5rem;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+}

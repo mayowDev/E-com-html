@@ -1,0 +1,32 @@
+
+/* Second Slider */
+.slider-two {
+    position: relative;
+    height: 30%;
+    .product-slider{
+        .product {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 4rem;
+           
+            cursor: pointer;
+            img {
+                display: block;
+                width: 90%;
+                margin: auto;
+                margin-bottom: 2rem;
+            }
+            @include btn-span;
+        }
+
+    }
+    @include slider-btn(yes);
+    .slick-track .product:hover span {
+        background-color: $color-primary;
+    }
+}
+
+.hr {
+    border: 1px dotted $color-border
+}

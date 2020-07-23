@@ -1,0 +1,14 @@
+.slider-five{
+    margin: 4rem 0;
+    position: relative;
+    .brand-slider{
+        padding: 3rem;
+        .product{
+            margin-left: 7rem;
+            img{
+                width: 80%;
+            }
+        }
+    }
+    @include slider-btn(yes);
+}

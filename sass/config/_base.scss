@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Rochester|Roboto|Sofia:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+
+
+
+/* ---------------------- Global styles -------------*/
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include responsive(tablet-land){
+      font-size: 56%; // 56.25% of 16px = 9px = 1rem; width < 1200
+    }
+
+    @include responsive(tablet){
+      font-size: 50%; // 50% of 16px = 8px = 1rem; width < 900
+    }
+
+    @include responsive(phone){
+      font-size: 40%; // 50% of 16px = 8px = 1rem; width < 600
+    }
+   
+    @include responsive(big-desktop){
+      font-size: 75%; // 75% of 16px = 12px = 1rem width > 1800
+    }
+}
+
+
+body{
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+::selection{
+  background-color: $color-primary;
+}
+
+/* my custom classes*/
+
+.container{
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto;
+}   
+
+.text-center{
+  text-align: center;
+}
+
+.text-secondary{
+  color: #6C757D;
+
+}
+.primary-color{
+  color: $color-primary;
+}
+
+.text-color{
+  color: $color-text;
+}
+
+i{
+  cursor: pointer;
+}
+
+.img-fluid{
+  width: 100%;
+}
+
+.rating i{
+  font-size: 1.5rem;
+  color: lightblue;
+}
+/* end of custom classes*/

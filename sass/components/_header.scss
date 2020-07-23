@@ -1,0 +1,89 @@
+header{
+    font-family: $font-roboto;
+    // green top nav
+    .top-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:$color-primary;
+        padding: 2rem;
+        color: white;
+        &--dropdown select{
+            font-size: 1.2rem;
+            background: transparent;
+            color: white;
+            padding: .5rem;
+            border-radius: .5rem;
+            border-color: white;
+            outline: none;
+            cursor: pointer;
+            option{
+                color: black;
+                outline: none;
+            }
+        }
+        &--title h3{
+            font-family: $font-gugi;
+            font-size: 3rem;
+        }
+        &--links a {
+            font-size: 1.8rem;
+            color: white;
+            padding:1rem;
+            margin-left: 1rem;
+            .fa, .fas{
+                font-weight: 300;
+                &::before{
+                    margin-right: .8rem;
+                }
+            }
+        }  
+    }
+    // second nav
+    .second-nav{
+        background-color:white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            display: flex;
+            align-items: center;
+            padding: 3rem;
+            @include responsive(phone){
+                padding: 1.5rem;
+    
+            }
+            a{
+                color: $color-light-grey;
+                margin-right: 3rem;
+                font-size: 1.5rem;
+                text-decoration: none;
+                text-transform: capitalize;
+                @include responsive(phone){
+                    margin-right: 1.5rem;
+                    font-weight:700;
+                }
+            }
+        }
+        // fa-icons
+        .icons{
+            display: flex;
+            align-items: center;
+            margin-right: 5rem;
+            font-size: 2.5rem;
+            @include responsive(phone){
+                margin-right: 0;
+            }
+            li{
+                margin: 0 2px;
+                i{
+                    padding: 0 2rem;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+

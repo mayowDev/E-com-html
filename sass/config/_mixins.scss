@@ -1,0 +1,110 @@
+@mixin responsive($breakpoint){
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em){ @content }; //below 600px to em
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width:56.25em){ @content }; //900px to em
+    }
+    @if $breakpoint == tablet-land {
+        @media only screen and (max-width:75em){ @content }; //below 1200px 
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width:75em){ @content }; //above 1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width:112.5em){ @content }; //1800px to em
+    }
+}
+
+@mixin btn-span{
+    
+    .btn-span {
+        text-align: center;
+        padding: 0.8rem 1rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        text-transform: capitalize;;
+        font-family: $font-roboto;
+        border-radius: 4rem;
+        border: 1px solid $color-border;
+        background-color: white;
+        color: $color-light-grey;
+        cursor: pointer;
+        transition: all .2s;
+        &:hover{
+            background-color: $color-primary;
+            transform: translateY(-2px);
+        }
+        &:active{
+            box-shadow:0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(0);
+        }
+    }
+    
+}
+
+@mixin slider-btn($opacityShow){
+    .slider-btn{
+        .position-top{
+            position: absolute;
+            top: 50%;
+        }
+        .prev,.next{
+            background-color: $color-primary;
+            padding: 1rem 1.5rem;
+            border-radius:10rem;
+            margin: 0 1rem;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s ease;
+            @if $opacityShow == yes {
+                
+                color: #6C757D;
+                background-color:#e5e7e9;
+                opacity: 1;
+            }
+            @if $opacityShow == no {
+                opacity: 0;
+            }
+        }
+        .right-0{
+            right: 0;
+        }
+    }
+    &:hover .slider-btn .prev,
+    &:hover .slider-btn .next{
+        opacity: 1;
+        
+    }
+}
+
+
+@mixin button {
+    button{
+        background: $color-primary;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+        border: none;
+        text-align: center;
+        color: whitesmoke;
+        border-radius: 6rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all .2s;
+        &:hover{
+            background-color: $color-primary;
+            color: $color-white;
+            transform: translateY(-2px);
+        }
+        &:active{
+            box-shadow:0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(0);
+        }
+    }
+    
+}

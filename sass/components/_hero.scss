@@ -1,0 +1,158 @@
+.slider-one{
+    position: relative;
+    height: 55vh;
+    .hero-slider{
+        .item-one{
+            background: linear-gradient(rgba($color-black, .5), rgba(51, 34, 61, 0.4)),
+            url('../../assets/item-1.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            height: 50vh;
+            position: relative;
+            text-align: center;
+            .description{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                // padding: 4rem 0;
+                span{
+                    display: inline-block;
+                    color: $color-primary;
+                    font-family: $font-sofia;
+                    font-size: 4.5rem;
+                    text-transform: capitalize;
+                    font-style: italic;
+                    transform: skewY(-2deg) skewX(-5deg)  scale(1.1);
+                }
+                h2{
+                    font-size: 5rem;
+                    color: white;
+                }
+                @include button;
+            }
+
+        }
+        .item-two, .item-three{
+            height: 50vh;
+            background-color: $color-grey;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            
+        }
+        
+        .item-two{
+            @include responsive(phone){
+                display: none;
+                
+            }
+            .description{
+                order: 1;
+                text-align: center;
+                padding: 5rem;
+                h2{
+                    font-size: 10rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: 1rem;
+                    color: white;
+                    margin-bottom: -8rem;
+                }
+                span{
+                    color: $color-primary;
+                    font-size: 3rem;
+                    font-family: $font-sofia;
+                    margin-top: 0;
+                    z-index: 1;
+                }
+                h3{
+                    margin-top: 0;
+                    font-size: 4rem;
+                    padding: 0 3rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                    padding: 0 5rem;
+                    color: $color-light-grey;
+                }
+                @include button;
+            }
+            .img-box{
+                order: 0;
+            }
+        }
+        .item-three{
+            .description{
+                order: 0;
+                padding: 5rem;
+                text-align: center;
+                h2{
+                    font-size: 15rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: .5rem;
+                    color: white;
+                    margin-bottom: -7rem;
+                }
+                span{
+                    color: $color-primary;
+                    font-size: 3rem;
+                    font-family: $font-sofia;
+                    margin-top: 0;
+                }
+                h3{
+                    margin-top: 0;
+                    font-size: 4rem;
+                    padding: 0 3rem;
+                    text-align: center;
+                }
+                @include button;
+            }
+            .img-box{
+                order: 1;
+            }
+        }
+        
+        // this class comes from slick slider plugin
+        .slick-dots{
+            display: flex;
+            justify-content: center;
+            // list-style-type: none;
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            margin: 0;
+            padding: 1rem 0;
+            li{
+                margin: 0 .6rem;
+                &.slick-active button{
+                    transform: scale(3);
+                    // box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.205);
+                    
+                }
+            }
+            button{
+                display: block;
+                background-color: white;
+                border: none;
+                width: .5rem;
+                height: .5rem;
+                border-radius: 50%;
+                padding: 0;
+                text-indent: -999999px;
+                cursor: pointer;
+                
+            }
+        }
+        
+    }
+    @include slider-btn(no);
+    
+    
+}
