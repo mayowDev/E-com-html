@@ -1,15 +1,20 @@
 .slider-one{
     position: relative;
     height: 55vh;
-    .hero-slider{
+    @include responsive(phone){
+        margin-bottom: 7rem;
+    }
+    .hero-slider{  
         .item-one{
             background: linear-gradient(rgba($color-black, .5), rgba(51, 34, 61, 0.4)),
             url('../../assets/item-1.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-
             height: 50vh;
+            @include responsive(phone){
+                height: 65vh;
+            }
             position: relative;
             text-align: center;
             .description{
@@ -38,7 +43,9 @@
         .item-two, .item-three{
             height: 50vh;
             background-color: $color-grey;
-
+            @include responsive(phone){
+                height: 65vh;
+            }
             display: flex;
             justify-content: space-between;
             align-items: center;

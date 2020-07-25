@@ -3,18 +3,31 @@
     align-items: center;
     justify-items: center;
     // padding: 0 5rem;
+    @include responsive(phone){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .columns{
         display: flex;
         align-items: center;
         // justify-content: center;
         flex-basis: 77%;
         padding: 0 3rem;
+        @include responsive(phone){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         &__contact{
+            
             h4{
                 padding: 4rem 1rem 0;
                 font-size: 2.5rem;
                 font-family: $font-roboto;
                 font-weight: 300;
+                @include responsive(phone){
+                    font-size: 4rem;
+                    
+                }
             }
             .info, .social-media{
                 color: #6C757D;
@@ -22,33 +35,52 @@
                 padding: 2rem 0;
                 font-size: 1.5rem;
                 text-transform: capitalize;
+                @include responsive(phone){
+                    font-size: 2.5rem;
+                    
+                }
 
                 i{
                     // px-md-2
-                    padding: 0 1rem;
+                    padding: 0 1.5rem;
                 }
             }
             .social-media > i{
                 
                 padding: 3% 2%;
                 padding-left: .5rem;
+                @include responsive(phone){
+                    padding-left: 1.5rem;
+                    
+                }
 
             }
         }
         &__services{
             padding:5rem;
+            @include responsive(phone){
+                padding:0;
+            }
             h4{
                 padding: 4rem 1rem 0;
                 font-size: 2.5rem;
                 font-family: $font-roboto;
                 font-weight: 300;
                 text-align: center;
+                @include responsive(phone){
+                    font-size: 4rem;
+                    text-align: left;
+                }
             }
             &--items{
                 display: flex;
                 flex-direction: column;
                 padding: 5rem 3rem; //3
                 margin-top: -3rem;
+                @include responsive(phone){
+                    padding: 5rem 0 ;
+                    
+                }
                 .pt-0{
                     padding-top: 0;
                 }
@@ -58,18 +90,29 @@
                     font-size: 1.5rem;
                     text-transform: capitalize;
                     font-weight: 300;
+                    @include responsive(phone){
+                        font-size: 2.5rem;
+                        padding:1rem 3.5rem;
+                    }
                 }
             }
             
         }
         &__extras{
             padding: 3rem;
+            @include responsive(phone){
+                padding:0;
+            }
             h4{
                 padding: 0 0 1rem 0;
                 font-size: 2.5rem;
                 font-family: $font-roboto;
                 font-weight: 300;
                 text-align: left;
+                @include responsive(phone){
+                    font-size: 4rem;
+                    padding-left: 1.5rem;
+                }
             }
             &--items{
                 display: flex;
@@ -82,6 +125,10 @@
                     text-transform: capitalize;
                     font-weight: 300;
                     padding: .6rem 0;
+                    @include responsive(phone){
+                        font-size: 2.5rem;
+                        padding:1rem 3rem;
+                    }
 
                 }
                 .pt-0{
@@ -98,12 +145,19 @@
             font-family: $font-roboto;
             font-weight: 300;
             text-align: center;
+            @include responsive(phone){
+                font-size: 3.5rem;
+                // padding:1rem 3rem;
+            }
         }
         &__items{
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
-            // width: 30%;
+            @include responsive(phone){
+                justify-content: center;
+                flex-wrap: wrap;
+            }
             img{
                 width: 25%;
                 // height: 10%;
@@ -119,6 +173,10 @@
 
     font-family: $font-roboto;
     padding: 5rem;
+    @include responsive(phone){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .contact{
         // padding-left: 5rem;
         h4{
@@ -127,12 +185,19 @@
             font-family: $font-roboto;
             font-size: 2.5rem;
             font-weight: 400;
+            @include responsive(phone){
+                padding-bottom:1rem;
+            }
         }
         p{
             margin: 0;
             padding: 0;
             font-size: 1.6rem;
             font-weight: 300;
+            @include responsive(phone){
+                padding-bottom:1.5rem;
+                font-size: 2rem;
+            }
 
         }
     }
@@ -140,6 +205,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include responsive(phone){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         div > input{
             border: 2px solid $color-light;
             border-radius: 5px;
@@ -151,6 +220,11 @@
             &:focus {
                 outline: none;
                 border: 2px solid lightblue;;
+            }
+            @include responsive(phone){
+                margin-bottom:1.5rem;
+                font-size: 2rem;
+                width: 100%;
             }
             
         }
@@ -164,23 +238,31 @@
             border: none;
             outline: none;
             cursor: pointer;
+            @include responsive(phone){
+                font-size:2.2rem;
+            }
         }
 
     }
 }
 
 .container{
-    padding-top: 1rem;
+    padding:1rem 0;
     p{
         padding-bottom: 1rem;
         img{
             width: 33%;
-            
+            @include responsive(phone){
+                width: 70%;
+            }
         }
         
     }
     small{
         padding: 2rem 0;
         font-size: 1.5rem;
+        @include responsive(phone){
+            font-size: 2.2rem; 
+        }
     }
 }
